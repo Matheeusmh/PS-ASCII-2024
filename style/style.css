@@ -56,12 +56,15 @@ nav .icon {
     box-shadow: #ffdb7f 0px 5px 15px,
         #f0f0f0 5px 10px 15px;
 }
+.container div:hover{
+  transform: scale(1.1, 1.1);
+}
 
 .img-banner1 {
     display: flex;
     flex: 25%;
     flex-grow: 1;
-    background-image: url("img/pexels-ron-lach-10250614.jpg");
+    background-image: url("img/masculinoConjunto4.jpg");
     padding: 50px;
     background-size: cover;
     height: 100%;
@@ -72,7 +75,7 @@ nav .icon {
     display: flex;
     flex: 25%;
     flex-grow: 1;
-    background-image: url("img/pexels-sidlaya-3053824.jpg");
+    background-image: url("img/femininoCamiseta2.jpg");
     padding: 50px;
     height: 100%;
     background-size: cover;
@@ -86,7 +89,7 @@ nav .icon {
     flex: 25%;
     padding: 50px;
     height: 100%;
-    background-image: url("img/pexels-armagan-basaran-107016502-12452982.jpg");
+    background-image: url("img/infantilConjunto1.jpg");
     background-size: cover;
     background-position: bottom;
 }
@@ -98,7 +101,7 @@ nav .icon {
     flex: 25%;
     padding: 50px;
     background-size: cover;
-    background-image: url("img/pexels-dentrushtin-10080212.jpg");
+    background-image: url("img/femininoConjunto4.jpg");
     background-position: center;
 }
 
