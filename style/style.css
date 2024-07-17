@@ -108,12 +108,15 @@ nav .icon {
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     grid-gap: 20px;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .white-box {
     background-color: white;
     box-shadow: 6px 6px 22px 2px black;
+}
+.white-box:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .container-pai .white-box {
@@ -293,7 +296,7 @@ nav .icon {
   
 }
 .filtros .feminino {
-  background-image: url("img/femininoCamiseta.jpg");
+  background-image: url("img/femininoCamiseta2.jpg");
   z-index: -2px;
   background-position: bottom;
   
