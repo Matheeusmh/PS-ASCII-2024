@@ -5,26 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0c0ce94d;
+        }
+    </style>
+    
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="style/img/WhatsApp_Image_2024-07-17_at_10.03.32-removebg-preview.png">
+    <div class="container-endereco">
+            <div class="form-image">
+                <img src="style/img/formulario-cadastro/svg/undraw_world_re_768g.svg" alt="">
         </div>
-        <button class="button">
-            <a href="produtos.html">Produtos</a>
-        </button>
-        <button class="button">
-            Home
-        </button>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Finalizando Compra...</h1>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname" type="text">Primeiro nome</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Digite o seu primeiro nome..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname" type="text">Sobrenome</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email" type="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="celular" type="tel">Telefone</label>
+                        <input type="tel" name="celular" id="celular" placeholder="Digite o seu número..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="pais" type="text">País</label>
+                        <input type="text" name="pais" id="pais" placeholder="Digite o seu país..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="estado" type="text">Estado</label>
+                        <input type="text" name="estado" id="estado" placeholder="Digite o seu estado..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cidade" type="text">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="rua" type="text">Rua</label>
+                        <input type="text" name="rua" id="rua" placeholder="Digite a sua rua..." required>
+                    </div>
+                    <div class="input-box">
+                        <label for="numero-casa" type="number">Número da casa</label>
+                        <input type="number" name="numero-casa" id="numero-casa" placeholder="Digite o número da sua casa..." required>
+                    </div>
+                </div>
+                <div class="pagamento-inputs">
+                    <div class="pagamento-titulo">
+                        <h6>Pagamento</h6>
+                    </div>
+                    <div class="pagamento-group">
+                        <div class="pagamento-input">
+                            <input type="radio" id="credito" name="pagamento">
+                            <label for="credito">Crédito</label>
+                        </div>
+                        <div class="pagamento-input">
+                            <input type="radio" id="debito" name="pagamento">
+                            <label for="debito">Débito</label>
+                        </div>
+                        <div class="pagamento-input">
+                            <input type="radio" id="boleto" name="pagamento">
+                            <label for="boleto">Boleto</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button><a href="index.html">Finalizar</a></button>
+                </div>
+            </form>
+        </div>
 
-        <button class="button">
-            Sobre Nós
-            <button class="button">
-                Contato
-            </button>
-        </button>
-    </nav>
+    </div>
 
 </body>
 </html>
