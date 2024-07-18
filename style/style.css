@@ -1,148 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
-    display: flex;
-    background-color: #eeeeee;
-    height: 80px;
-    width: auto;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: #ffddb7 0px 5px 15px,
-        #f0f0f0 5px 10px 15px;
+  display: flex;
+  background-color: #eeeeee;
+  height: 80px;
+  width: auto;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: #ffddb7 0px 5px 15px,
+    #f0f0f0 5px 10px 15px;
 }
 
 nav .button {
-    font-size: 20px;
-    outline: 0 !important;
-    border: 0 !important;
-    width: auto;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
+  font-size: 20px;
+  outline: 0 !important;
+  border: 0 !important;
+  width: auto;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 nav .button a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 nav .button:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
 nav .icon {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.logo{
+.logo {
   height: 300px;
   width: 300px;
 }
 
-.logo img{
+.logo img {
   width: 100%;
   height: 100%;
 }
+
 .container {
-    margin: 100px;
-    height: 250px;
-    width: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    box-shadow: #ffdb7f 0px 5px 15px,
-        #f0f0f0 5px 10px 15px;
+  margin: 100px;
+  height: 250px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  box-shadow: #ffdb7f 0px 5px 15px,
+    #f0f0f0 5px 10px 15px;
 }
-.container div:hover{
+
+.container div:hover {
   transform: scale(1.1, 1.1);
 }
 
 .img-banner1 {
-    display: flex;
-    flex: 25%;
-    flex-grow: 1;
-    background-image: url("img/masculinoConjunto4.jpg");
-    padding: 50px;
-    background-size: cover;
-    height: 100%;
-    background-position: center;
+  display: flex;
+  flex: 25%;
+  flex-grow: 1;
+  background-image: url("img/masculinoConjunto4.jpg");
+  padding: 50px;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
 }
 
 .img-banner2 {
-    display: flex;
-    flex: 25%;
-    flex-grow: 1;
-    background-image: url("img/femininoCamiseta2.jpg");
-    padding: 50px;
-    height: 100%;
-    background-size: cover;
-    background-position: bottom;
+  display: flex;
+  flex: 25%;
+  flex-grow: 1;
+  background-image: url("img/femininoCamiseta2.jpg");
+  padding: 50px;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .img-banner3 {
-    display: flex;
-    height: 100%;
-    flex-grow: 1;
-    flex: 25%;
-    padding: 50px;
-    height: 100%;
-    background-image: url("img/infantilCamiseta4.jpg");
-    background-size: cover;
-    background-position: bottom;
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex: 25%;
+  padding: 50px;
+  height: 100%;
+  background-image: url("img/infantilCamiseta4.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .img-banner4 {
-    display: flex;
-    flex-grow: 1;
-    height: 100%;
-    flex: 25%;
-    padding: 50px;
-    background-size: cover;
-    background-image: url("img/femininoConjunto4.jpg");
-    background-position: center;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  flex: 25%;
+  padding: 50px;
+  background-size: cover;
+  background-image: url("img/femininoConjunto4.jpg");
+  background-position: center;
 }
 
 /*-------------------*/
 .container-pai {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
-    grid-gap: 20px;
-    border-top: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  grid-gap: 20px;
+  border-top: 1px solid black;
 }
 
 .white-box {
-    background-color: white;
-    box-shadow: 6px 6px 22px 2px black;
+  background-color: white;
+  box-shadow: 6px 6px 22px 2px black;
 }
-.white-box:hover{
-    transform: scale(1.1, 1.1);
+
+.white-box:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .container-pai .white-box {
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
-    max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  max-width: 100%;
 }
 
-.white-box img{
-    width: 100%;
-    height: 75%;
+.white-box img {
+  width: 100%;
+  height: 75%;
 }
 
 .text-box {
@@ -150,7 +153,7 @@ nav .icon {
   height: 100%;
   width: 100%;
   flex-direction: column;
-  justify-content:space-between
+  justify-content: space-between
 }
 
 .text-box h3 {
@@ -164,288 +167,7 @@ nav .icon {
 }
 
 
-.text-box .button {
-    --width: 100%;
-    --height: 35px;
-    --tooltip-height: 35px;
-    --tooltip-width: 90px;
-    --gap-between-tooltip-to-button: 18px;
-    --button-color: #222;
-    --tooltip-color: #fff;
-    height: var(--height);
-    background: var(--button-color);
-    position: relative;
-    text-align: center;
-    font-family: "Arial";
-    transition: background 0.3s;
-  }
-  
-  .text-box .button::before {
-    position: absolute;
-    content: attr(data-tooltip);
-    width: var(--tooltip-width);
-    height: var(--tooltip-height);
-    background-color: #555;
-    font-size: 0.9rem;
-    color: #fff;
-    border-radius: .25em;
-    line-height: var(--tooltip-height);
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-    left: calc(50% - var(--tooltip-width) / 2);
-  }
-  
-  .text-box .button::after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #555;
-    left: calc(50% - 10px);
-    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-  }
-  
-  .text-box .button::after,.button::before {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-  }
-  
-  .text-box .text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .text-box .button-wrapper,.text,.icon {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    color: #fff;
-  }
-  
-  .text-box .text {
-    top: 0
-  }
-  
-  .text-box .text,.icon {
-    transition: top 0.5s;
-  }
-  
-  .text-box .icon {
-    color: #fff;
-    top: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icon svg {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .text-box .button:hover {
-    background: #222;
-  }
-  
-  .text-box .button:hover .text {
-    top: -100%;
-  }
-  
-  .text-box .button:hover .icon {
-    top: 0;
-  }
-  
-  .text-box .button:hover:before,.button:hover:after {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .text-box .button:hover:after {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-  }
-  
-  .text-box .button:hover:before {
-    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-  } 
-
-
-
-
-.white-box .sell {
-    background-color: #E2401F;
-    color: white;
-    font-size: 1.6rem;
-    font-weight: bold;
-    z-index: 5px;
-}
-
-
-.filtros {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 300px;
-  width: 100%;
-  box-shadow: #fdde8e 0px 5px 15px,
-  #f0f0f0 5px 10px 15px;
-}
-
-.filtros div{
-  flex-grow: 1;
-  height: 100%;
-  display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.filtros .masculino {
-  background-image: url("img/masculinoCamiseta1.jpg");
-  z-index: -2px;
-  background-position: bottom;
-  
-}
-.filtros .feminino {
-  background-image: url("img/femininoCamiseta2.jpg");
-  z-index: -2px;
-  background-position: bottom;
-  
-}
-.filtros .infantil {
-  background-image: url("img/infantilCamisa2.jpg");
-  z-index: -2px;
-  background-position: center;
-  
-}
-
-.filtros a {
-  background-color: #fdde8e;
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-  padding: 30px;
-  text-align: center;
-  font-size: 1rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  
-}
-
-
-.filtros a:hover{
-  padding: 35px;
-  background-color:  white;
-  
-}
-
-.filtros .filtro p.tip {
-  font-size: 1em;
-  font-weight: 700;
-}
-
-.filtros .filtro:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.filtros:hover > .filtro:not(:hover) {
-  filter: blur(10px);
-  transform: scale(0.9, 0.9);
-}
-
-.imagens-compra{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: auto;
-  margin: 0 auto;
-  margin-top: 10vh;
-  box-shadow: #fdde8e 0px 5px 15px,
-  #f0f0f0 5px 10px 15px;
-}
-.imagens-compra img{ 
-  max-width: 100%;
-  display: block;
-  box-shadow: #fdde8e 0px 5px 15px,
-  #f0f0f0 5px 10px 15px;
-  margin-left: 50%;
-}
-
-.inteira {
-  grid-column: 1;
-  grid-row: 1 / 4;
-  z-index: -5px;
-}
-
-.menores {
-  height: 150px;
-}
-
-.imagens-compra img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagens-compra:hover > .menores:not(:hover) {
-  transform: scale(0.9, 0.9);
-}
-
-.formulario{
-  grid-column: 3;
-  grid-row: 1 / 4;
-}
-
-
-
-@media (max-width: 600px) {
-    .container-pai {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .container-pai img {
-        display: block;
-    }
-
-    .imagens-compra{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .imagens-compra img{
-      display: grid;
-      margin-left: 0; 
-    }
-    .formulario{ 
-      display: block;
-    }
-}
-
-.formulario form {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: column;
-}
-
-.formulario label {
-  margin-bottom: 5px;
-  color: #666;
-}
-
-.formulario select,
-.formulario input[type="text"],
-.formulario input[type="number"] {
-  width: 100px; 
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-.comprar {
-  width: 100%;
-  height: 30px;
-}
+.text-box,
 .comprar .button {
   --width: 100%;
   --height: 35px;
@@ -462,6 +184,7 @@ nav .icon {
   transition: background 0.3s;
 }
 
+.text-box,
 .comprar .button::before {
   position: absolute;
   content: attr(data-tooltip);
@@ -476,6 +199,7 @@ nav .icon {
   left: calc(50% - var(--tooltip-width) / 2);
 }
 
+.text-box,
 .comprar .button::after {
   position: absolute;
   content: '';
@@ -487,19 +211,25 @@ nav .icon {
   bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
 }
 
-.comprar .button::after,.button::before {
+.text-box,
+.comprar .button::after,
+.button::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
 
+.text-box,
 .comprar .text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.comprar .button-wrapper,.text,.icon {
+.text-box,
+.comprar .button-wrapper,
+.text,
+.icon {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -508,14 +238,18 @@ nav .icon {
   color: #fff;
 }
 
+.text-box,
 .comprar .text {
-  top: 0
+  top: 0;
 }
 
-.comprar .text,.icon {
+.text-box,
+.comprar .text,
+.icon {
   transition: top 0.5s;
 }
 
+.text-box,
 .comprar .icon {
   color: #fff;
   top: 100%;
@@ -529,42 +263,135 @@ nav .icon {
   height: 24px;
 }
 
+.text-box,
 .comprar .button:hover {
   background: #222;
 }
 
+.text-box,
 .comprar .button:hover .text {
   top: -100%;
 }
 
+.text-box,
 .comprar .button:hover .icon {
   top: 0;
 }
 
-.comprar .button:hover:before,.button:hover:after {
+.text-box,
+.comprar .button:hover:before,
+.button:hover:after {
   opacity: 1;
   visibility: visible;
 }
 
+.text-box,
 .comprar .button:hover:after {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
 }
 
+.text-box,
 .comprar .button:hover:before {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-} 
-
-.produto {
-  border: 1px solid black;
 }
 
-.container-endereco{
+
+
+
+.white-box .sell {
+  background-color: #E2401F;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  z-index: 5px;
+}
+
+
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+  width: 100%;
+  box-shadow: #fdde8e 0px 5px 15px,
+    #f0f0f0 5px 10px 15px;
+}
+
+.filtros div {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.filtros .masculino {
+  background-image: url("img/masculinoCamiseta1.jpg");
+  z-index: -2px;
+  background-position: bottom;
+
+}
+
+.filtros .feminino {
+  background-image: url("img/femininoCamiseta2.jpg");
+  z-index: -2px;
+  background-position: bottom;
+
+}
+
+.filtros .infantil {
+  background-image: url("img/infantilCamisa2.jpg");
+  z-index: -2px;
+  background-position: center;
+
+}
+
+.filtros a {
+  background-color: #fdde8e;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  padding: 30px;
+  text-align: center;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+
+.filtros a:hover {
+  padding: 35px;
+  background-color: white;
+
+}
+
+.filtros .filtro p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.filtros .filtro:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.filtros:hover>.filtro:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.container-detalhes {
+  margin: 0 auto;
+  margin-top: 60px;
   width: 88%;
   height: 80vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
+.detalhes-image,
 .form-image {
   width: 50%;
   display: flex;
@@ -574,11 +401,113 @@ nav .icon {
   background-color: #fde3a7d7;
 }
 
-.form-image img{
+.detalhes-image img {
   width: 31rem;
 }
 
-.form{
+.detalhes {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.detalhes-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detalhes-header h1 {
+  margin-bottom: 20px;
+}
+
+.detalhes-header h1::after {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #222;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.input-box select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-box select {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c
+}
+
+.input-box select:hover {
+  background-color: #eeeeee75;
+
+}
+
+.input-box select:focus-visible {
+  outline: 1px solid #222;
+}
+
+.tamanho-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin-top: 0.62rem;
+}
+
+.tamanho-input {
+  display: flex;
+  align-items: center;
+}
+
+.tamanho-input input {
+  margin-right: 0.35rem;
+}
+
+.tamanho-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.comprar {
+  width: 100%;
+  height: 30px;
+}
+
+.comprar .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto {
+  border: 1px solid black;
+}
+
+.container-endereco {
+  width: 88%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image img {
+  width: 31rem;
+}
+
+.form {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -607,7 +536,7 @@ nav .icon {
   cursor: pointer;
 }
 
-.login-button:hover{
+.login-button:hover {
   background-color: #6c63fff1;
 }
 
@@ -635,13 +564,13 @@ nav .icon {
 
 }
 
-.input-box{
+.input-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
 
-.input-box input{
+.input-box input {
   margin: 0.6rem 0;
   padding: 0.8rem 1.2rem;
   border: none;
@@ -655,11 +584,12 @@ nav .icon {
 }
 
 .input-box input:focus-visible {
-  outline: 1px solid #6c63ff;
+  outline: 1px solid #222;
 }
 
 .input-box label,
-.pagamento-titulo h6 {
+.pagamento-titulo h6,
+.tamanho-titulo h6 {
   font-size: 0.75rem;
   font-weight: 600;
   color: #000000c0;
@@ -714,18 +644,49 @@ nav .icon {
 }
 
 @media screen and (max-width: 1330px) {
+  .detalhes-image {
+    display: none;
+  }
+
+  .container-detalhes {
+    width: 50%;
+  }
+
+  .detalhes {
+    width: 100%;
+  }
+
   .form-image {
     display: none;
   }
+
   .container-endereco {
     width: 50%;
   }
+
   .form {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 1064px) {
+  .container-detalhes {
+    width: 90%;
+    height: auto;
+  }
+
+  .tamanho-inputs {
+    margin-top: 2rem;
+  }
+
+  .tamanho-group {
+    flex-direction: column;
+  }
+
+  .tamanho-input {
+    margin-top: 0.5rem;
+  }
+
   .container-endereco {
     width: 90%;
     height: auto;
@@ -750,5 +711,27 @@ nav .icon {
   .pagamento-input {
     margin-top: 0.5rem;
   }
+}
 
+@media (max-width: 600px) {
+  .container-pai {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-pai img {
+    display: block;
+  }
+
+  .imagens-compra {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .imagens-compra img {
+    display: grid;
+    margin-left: 0;
+  }
+
+  .formulario {
+    display: block;
+  }
 }
