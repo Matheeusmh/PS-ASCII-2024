@@ -404,9 +404,10 @@ nav .icon {
 .white-box .sell {
   background-color: #E2401F;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-weight: bold;
   z-index: 5px;
+  text-align: center;
 }
 
 
@@ -433,7 +434,11 @@ nav .icon {
   background-image: url("img/masculinoCamiseta1.jpg");
   z-index: -2px;
   background-position: bottom;
+}
 
+.inteiro {
+  border: 2 solid white;
+  width: 100%;
 }
 
 .filtros .feminino {
@@ -450,7 +455,7 @@ nav .icon {
 
 }
 
-.filtros a {
+.tip {
   background-color: #fde3a7d7;
   text-decoration: none;
   color: black;
@@ -465,7 +470,7 @@ nav .icon {
 }
 
 
-.filtros a:hover {
+.tip:hover {
   padding: 35px;
   background-color: white;
 
