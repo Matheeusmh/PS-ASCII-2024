@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style/style.css">
+
 </head>
 
 <body>
     <nav>
         <div class="logo">
-            <img src="style/img/WhatsApp_Image_2024-07-17_at_10.03.32-removebg-preview.png">
+            <img src="../../style/img/logo.png">
         </div>
         <button class="button">
             <a href="../../produtos.html">Produtos</a>
@@ -21,68 +22,103 @@
         </button>
 
         <button class="button">
-            Sobre Nós
+            <a href="sobre-nos.html">Sobre Nós</a>
         </button>
         <button class="button">
             Contato
         </button>
     </nav>
-    <section class="imagens-compra">
-        <img src="../../style/img/infantilCamisa2.jpg" class="inteira">
-        <img src="../segundo-produto/infantilCamisa2.1.jpg" class="menores">
-        <img src="../segundo-produto/infantilCamisa2.2.jpg" class="menores">
-        <img src="../segundo-produto/infantilCamisa2.3.jpg" class="menores">
-        <div class="formulario">
+    <div class="tel-imagem">
+        <img src="../../style/img/infantilCamisa2.jpg">
+    </div>
+    <div class="container-detalhes">
+        <div class="detalhes-imagem">
+            <div class="imagem-completa">
+                <img src="../../style/img/infantilCamisa2.jpg" class="maior">
+            </div>
+            <div class="imagem-detalhada">
+                <img src="../segundo-produto/infantilCamisa2.1.jpg" class="menor">
+                <img src="../segundo-produto/infantilCamisa2.2.jpg" class="menor">
+                <img src="../segundo-produto/infantilCamisa2.3.jpg" class="menor">
+            </div>
+        </div>
+        <div class="detalhes">
             <form action="#">
-                <h2>Nome do Produto</h2>
-                <p>Descrição detalhada do produto.</p>
-
-                <div class="produto preco" >
-                    <p style="font-size: 30px;">$49,90</p>
+                <div class="detalhes-header">
+                    <div class="title">
+                        <h1>Nome</h1>
+                        <p>Detalhes</p>
+                    </div>
+                    <div class="preco">
+                        <h1>R$ 0,00</h1>
+                    </div>
                 </div>
-                <div class="produto tamanho">
-                    <label for="tamanho">Tamanho:</label>
-                    <select id="tamanho">
-                        <option value="P">P</option>
-                        <option value="M">M</option>
-                        <option value="G">G</option>
-                        <option value="GG">GG</option>
-                    </select>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="cor">Cor:</label>
+                        <select id="cor" required>
+                            <option selected disabled value="">Selecione uma cor...</option>
+                            <option value="vermelho">Vermelho</option>
+                            <option value="azul">Azul</option>
+                            <option value="verde">Verde</option>
+                            <option value="preto">Preto</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" min="1" value="1" required>
+                    </div>
                 </div>
-                <div class="produto cor">
-                    <label for="cor">Cor:</label>
-                    <select id="cor">
-                        <option value="vermelho">Vermelho</option>
-                        <option value="azul">Azul</option>
-                        <option value="verde">Verde</option>
-                        <option value="preto">Preto</option>
-                    </select>
-                </div>
-                <div class="produto quantidade">
-                    <label for="quantidade">Quantidade:</label>
-                    <input type="number" id="quantidade" min="1" value="1">
+                <div class="input-box">
+                    <div class="tamanho-titulo">
+                        <h6>Tamanho</h6>
+                    </div>
+                    <div class="input-box">
+                        <div class="tamanho-input">
+                            <input type="radio" id="PP" name="tamanho">
+                            <label for="PP">PP</label>
+                        </div>
+                        <div class="tamanho-input">
+                            <input type="radio" id="P" name="tamanho">
+                            <label for="P">P</label>
+                        </div>
+                        <div class="tamanho-input">
+                            <input type="radio" id="M" name="tamanho">
+                            <label for="M">M</label>
+                        </div>
+                        <div class="tamanho-input">
+                            <input type="radio" id="G" name="tamanho">
+                            <label for="G">G</label>
+                        </div>
+                        <div class="tamanho-input">
+                            <input type="radio" id="GG" name="tamanho">
+                            <label for="GG">GG</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="comprar">
                     <div data-tooltip="Price:-R$" class="button">
                         <div class="button-wrapper">
                             <div class="text">Comprar</div>
                             <a href="../../cadastrar-endereco.html">
-                                    <span class="icon">
-                                        <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
-                                            </path>
-                                        </svg>
-    
-                                    </span>
-                                </a>
+                                <span class="icon">
+                                    <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16"
+                                        width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">
+                                        </path>
+                                    </svg>
+
+                                </span>
+                            </a>
                         </div>
                     </div>
-            </div>
+                </div>
             </form>
         </div>
-    </section>
+
+    </div>
+
 </body>
 
 </html>
