@@ -1,3 +1,4 @@
+/*-----------------------------------------Geral----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -7,17 +8,21 @@
   margin: 0;
 }
 
+/*------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Navegação------------------------------------------------*/
 nav {
   display: flex;
   background-color: #eeeeee;
   height: 80px;
-  width: auto;
+  max-width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: #fde3a7d7 0px 10px 15px,
     #222 0px 5px 10px;
 }
-
+.contatos-nav {
+  margin-right: 20px;
+}
 nav .button {
   font-size: 20px;
   outline: 0 !important;
@@ -58,27 +63,38 @@ nav .icon {
   height: 100%;
 }
 
+/*------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Principal-------------------------------------------*/
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Home Page--------------------------------------------*/
 .container {
   margin: 100px;
   height: 100vh;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   box-shadow: #fde3a7d7 0px 10px 15px,
     #222 0px 5px 10px;
 }
 
 .container .sell {
-  display:  block;
+  display: flex;
   background-color: #E2401F;
   color: white;
   font-size: 1.6rem;
   font-weight: bold;
   z-index: 5px;
-  height: 50px;
-  text-align: center;
+  height: 8%;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -101,7 +117,7 @@ nav .icon {
   flex-direction: column;
 }
 
-.promocao a{
+.promocao a {
   height: 100%;
   border: 1px solid white;
   text-decoration: none;
@@ -123,6 +139,8 @@ nav .icon {
   background-image: url("img/femininoConjunto4.jpg");
 }
 
+/*------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Página de Produtos-----------------------------------*/
 .container-pai {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -166,7 +184,7 @@ nav .icon {
 }
 
 .text-box span {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #464646;
 }
 
@@ -490,6 +508,8 @@ nav .icon {
   transform: scale(0.9, 0.9);
 }
 
+/*------------------------------------------------------------------------------------------------*/
+/*-----------------------Página de um produto específico------------------------------------------*/
 .container-detalhes {
   margin: 0 auto;
   margin-top: 60px;
@@ -604,12 +624,67 @@ nav .icon {
   border: 1px solid black;
 }
 
+.tel-imagem {
+  display: flex;
+  max-width: 100%;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.tel-imagem img {
+  display: flex;
+  width: 50%;
+}
+
+.detalhes-imagem {
+  display: flex;
+  width: 80%;
+
+}
+
+.imagem-completa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+
+.imagem-completa img {
+  max-width: 100%;
+}
+
+.imagem-detalhada {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.imagem-detalhada img {
+  max-width: 100%;
+  height: 33%;
+}
+
+.imagem-detalhada img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagem-completa img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.imagem-detalhada:hover>img:not(:hover) {
+  transform: scale(0.9, 0.9);
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Página de Endereço-----------------------------------------*/
 .container-endereco {
   width: 88%;
   height: 80vh;
   display: flex;
-  box-shadow: #fde3a7d7 0px 0px 15px,
-    #222 0px 0px 10px;
 }
 
 .form-image img {
@@ -761,6 +836,134 @@ nav .icon {
   transform: scale(1.1, 1.1);
 }
 
+/*------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Página Sobre Nós------------------------------------------*/
+.sobre-nos {
+  margin-top: 150px;
+  max-width: 100%;
+  box-shadow: #fde3a7d7 0px 10px 15px,
+    #222 0px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-nos img{
+width: 40%;
+height: 40%;
+}
+.sobre-nos-texto{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+  margin-bottom: 200px;
+}
+
+.sobre-nos-texto .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px;
+}
+.camaleao{
+  background-image: url("img/camaleao.jpg");
+  background-position: center;
+}
+
+.arara{
+  background-position: left;
+  background-image: url("img/araras.jpg");
+  height: 50%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Contatos------------------------------------------------*/
+.contato {
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 60px;
+  margin-top: 200px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 5px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/*Github*/
+.containerTwo:hover {
+  background-color: #000000;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: green;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Footer-----------------------------------------------------*/
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  flex-grow: 1;
+}
+
+footer h5 {
+  color: white;
+
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------Responsividade----------------------------------------*/
 @media screen and (max-width: 1330px) {
   .container-detalhes {
     width: 50%;
@@ -829,217 +1032,81 @@ nav .icon {
   .imagem-detalhada img {
     display: none;
   }
+
+  .sobre-nos {
+    max-width: 100%;
+  }
+  .sobre-nos-texto {
+    display: flex;
+    flex-direction: column;
+  }
+  .camaleao{
+    display: none;
+  }
+  .arara {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .container-pai {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  
   .container-pai img {
     display: block;
   }
 
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container .sell {
+    height: 15%;
+    font-size: 1rem;
+  }
 }
 
+
 @media screen and (max-width: 799px) {
+  .button a{
+    display: none;
+  }
+  
+  nav .button{
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .imagem-completa img {
     display: none;
   }
-
+  
   .detalhes-imagem {
     display: none;
   }
-
+  
   .container-detalhes {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     justify-content: center;
   }
-}
 
-.tel-imagem {
-  display: flex;
-  max-width: 100%;
-  margin-top: 100px;
-  justify-content: center;
-}
-
-.tel-imagem img {
-  display: flex;
-  width: 50%;
+  
+  .sobre-nos img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .tel-imagem img {
     display: none;
   }
-
-  .tel-imagem {
-    display: none;
-  }
 }
 
-.detalhes-imagem {
-  display: flex;
-  width: 80%;
-
-}
-
-.imagem-completa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  height: 100%;
-}
-
-.imagem-completa img {
-  max-width: 100%;
-}
-
-.imagem-detalhada {
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.imagem-detalhada img {
-  max-width: 100%;
-  height: 33%;
-}
-
-.imagem-detalhada img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagem-completa img:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.imagem-detalhada:hover>img:not(:hover) {
-  transform: scale(0.9, 0.9);
-}
-
-.sobre-nos {
-  max-width: 100%;
-  height: 200vh;
-  margin: 50px;
-  box-shadow: #fde3a7d7 0px 10px 15px,
-    #222 0px 5px 10px;
-}
-
-.sobre-nos-logo {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  max-width: 100%;
-}
-
-.sobre-nos-texto img {
-  width: 30%;
-  height: 50%;
-  margin: 50px;
-}
-
-.sobre-nos-img1 {
-  float: left;
-  display: block;
-  width: 50%;
-}
-
-.sobre-nos-img2 {
-  float: right;
-}
-
-footer {
-  display: flex;
-  max-width: 100%;
-  height: 100px;
-  background-color: blue;
-}
-
-.contato{
-  border-top: 1px solid black;
-  margin-top: 175px;
-  max-width: 100%;
-  height: 30vh;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(238, 238, 238);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-around;
-  padding: 25px 25px;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-}
-
-/* for all social containers*/
-.socialContainer {
-  width: 52px;
-  height: 52px;
-  border-radius: 5px;
-  background-color: rgb(44, 44, 44);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition-duration: 0.3s;
-}
-/* instagram*/
-.containerOne:hover {
-  background-color: #d62976;
-  transition-duration: 0.3s;
-}
-/* twitter*/
-.containerTwo:hover {
-  background-color: #000000;
-  transition-duration: 0.3s;
-}
-/* linkdin*/
-.containerThree:hover {
-  background-color: #0072b1;
-  transition-duration: 0.3s;
-}
-/* Whatsapp*/
-.containerFour:hover {
-  background-color: green;
-  transition-duration: 0.3s;
-}
-
-.socialContainer:active {
-  transform: scale(0.9);
-  transition-duration: 0.3s;
-}
-
-.socialSvg {
-  width: 17px;
-}
-
-.socialSvg path {
-  fill: rgb(255, 255, 255);
-}
-
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+/*------------------------------------------------------------------------------------------------*/
