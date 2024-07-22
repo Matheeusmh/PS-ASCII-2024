@@ -6,46 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../style/style.css">
-    <style>
-        @media screen and (max-width: 600px) {
-            .contatos-nav a {
-                display: none;
-            }
-
-            nav {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .produtos a {
-                display: none;
-            }
-        }
-    </style>
-
 </head>
 
 <body>
     <nav>
-        <div class="logo">
-            <a href="../../index.html"><img src="../../style/img/logo.png"></a>
+        <div class="nav-padrao">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../style/img/logo.png"></a>
+            </div>
+            <button class="button home">
+                <a href="../../index.html">Home</a>
+            </button>
+            <button class="button produtos">
+                <a href="../../produtos.html">Produtos</a>
+            </button>
+            <button class="button contatos-nav">
+                <a href="#contatos">Contato</a>
+            </button>
+            <button class="button sobre">
+                <a href="../../sobre-nos.html">Sobre Nós</a>
+            </button>
         </div>
-        <button class="button produtos">
-            <a href="../../produtos.html">Produtos</a>
-        </button>
-        <button class="button home">
-            <a href="../../index.html">Home</a>
-        </button>
-
-        <button class="button sobre">
-            <a href="../../sobre-nos.html">Sobre Nós</a>
-        </button>
-        <button class="button contatos-nav">
-            <a href="#contatos">Contato</a>
-        </button>
+        <div class="nav-responsivo">
+            <button class="button home">
+                <a href="../../index.html">Home</a>
+            </button> 
+            <button class="button produtos">
+                <a href="../../produtos.html">Produtos</a>
+            </button>
+            <button class="button contatos-nav">
+                <a href="#contatos">Contato</a>
+            </button>
+            <button class="button sobre">
+                <a href="../../sobre-nos.html">Sobre Nós</a>
+            </button>
+        </div>
     </nav>
     <main>
-
         <div class="tel-imagem">
             <img src="../../style/img/femininoCalca1.jpg">
         </div>
