@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <!--Definindo metadados-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Finalizando a compra...">
@@ -27,7 +28,7 @@
         <div class="form-image">
             <img src="style/img/formulario-cadastro/svg/undraw_world_re_768g.svg" alt="">
         </div>
-        <div class="form">
+        <div class="form"> <!--Entrada de dados para finalizar a compra-->
             <form action="#">
                 <div class="form-header">
                     <div class="title-endereco">
@@ -35,51 +36,49 @@
                     </div>
                 </div>
                 <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname" type="text">Primeiro nome</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Digite o seu primeiro nome..."
-                            required>
+                    <div class="input-box"> <!--Entrada do nome completo-->
+                        <label for="name" type="text">Nome completo</label>
+                        <input type="text" name="name" id="name" placeholder="Digite o seu nome completo..." required>
                     </div>
-                    <div class="input-box">
-                        <label for="lastname" type="text">Sobrenome</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome..."
-                            required>
-                    </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do email-->
                         <label for="email" type="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Digite o seu email..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do número de telefone-->
                         <label for="celular" type="tel">Telefone</label>
                         <input type="tel" name="celular" id="celular" placeholder="Digite o seu número..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do nome do país-->
                         <label for="pais" type="text">País</label>
                         <input type="text" name="pais" id="pais" placeholder="Digite o seu país..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do nome do estado-->
                         <label for="estado" type="text">Estado</label>
                         <input type="text" name="estado" id="estado" placeholder="Digite o seu estado..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do nome da cidade-->
                         <label for="cidade" type="text">Cidade</label>
                         <input type="text" name="cidade" id="cidade" placeholder="Digite a sua cidade..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do nome do bairro-->
                         <label for="bairro" type="text">Bairro</label>
                         <input type="text" name="bairro" id="bairro" placeholder="Digite o seu bairro..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do nome da rua-->
                         <label for="rua" type="text">Rua</label>
                         <input type="text" name="rua" id="rua" placeholder="Digite a sua rua..." required>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box"> <!--Entrada do número residencial-->
                         <label for="numero-casa" type="number">Número da casa</label>
                         <input type="number" name="numero-casa" id="numero-casa"
                             placeholder="Digite o número da sua casa..." required>
                     </div>
+                    <div class="input-box"> <!--Informações adicionais-->
+                        <label for="informações" type="text">Informações Adicionais</label>
+                        <input type="text" name="informações" id="informações" placeholder="Observações..." required>
+                    </div>
                 </div>
-                <div class="pagamento-inputs">
+                <div class="pagamento-inputs"> <!--Escolher o método de pagamento-->
                     <div class="pagamento-titulo">
                         <h6>Pagamento</h6>
                     </div>
@@ -98,12 +97,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="continue-button">
+                <div class="continue-button"> <!--Botão para finalizar a compra-->
                     <button><a href="index.html">Finalizar</a></button>
                 </div>
             </form>
         </div>
-
     </div>
 
 </body>
