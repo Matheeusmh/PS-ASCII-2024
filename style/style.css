@@ -1,4 +1,4 @@
-/*-----------------------------------------Geral----------------------------------------------*/
+/*-----------------------------------------Estilo Geral----------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -8,12 +8,13 @@
   margin: 0;
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*----------------------------------------Navegação------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Navegação--------------------------------------------------------------------------------------*/
 nav {
   max-width: 100%;
 }
 
+/*----Estilo da passa de navegação----*/
 .nav-padrao {
   display: flex;
   background-color: #eeeeee;
@@ -25,10 +26,12 @@ nav {
     #222 0px 5px 10px;
 }
 
+
 .nav-padrao .sobre {
   margin-right: 20px;
 }
 
+/*----Estilo dos botões de navegação----*/
 .nav-padrao .button {
   font-size: 20px;
   outline: 0 !important;
@@ -69,6 +72,7 @@ nav {
   height: 100%;
 }
 
+/*----Estilo do menu em telas menores----*/
 .nav-responsivo {
   max-width: 100%;
   height: 25vh;
@@ -108,8 +112,8 @@ nav {
 }
 
 
-/*------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------Principal-------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Principal-----------------------------------------------------------------------------------*/
 main {
   display: flex;
   flex-flow: row wrap;
@@ -118,8 +122,8 @@ main {
   max-width: 100%;
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------Home Page--------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Home Page-----------------------------------------------------------------------------------*/
 .container {
   margin: 100px;
   height: 100vh;
@@ -130,6 +134,11 @@ main {
     #222 0px 5px 10px;
 }
 
+.container div:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/*----Span de promomoção do banner----*/
 .container .sell {
   display: flex;
   background-color: #E2401F;
@@ -141,10 +150,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.container div:hover {
-  transform: scale(1.1, 1.1);
 }
 
 .promocao .sell:hover {
@@ -168,6 +173,7 @@ main {
   text-decoration: none;
 }
 
+/*----Imagens do banner----*/
 .banner1 {
   background-image: url("img/masculinoConjunto4.jpg");
 }
@@ -184,8 +190,8 @@ main {
   background-image: url("img/femininoConjunto4.jpg");
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------Página de Produtos-----------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Página de Produtos-----------------------------------------------------------------------------*/
 .container-pai {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -194,6 +200,7 @@ main {
   border-top: 1px solid black;
 }
 
+/*----Box de cada produto----*/
 .white-box {
   background-color: white;
   box-shadow: 3px 3px 11px 1px black;
@@ -215,6 +222,7 @@ main {
   height: 75%;
 }
 
+/*----Descrição do produto-----*/
 .text-box {
   display: flex;
   height: 100%;
@@ -233,7 +241,7 @@ main {
   color: #464646;
 }
 
-
+/*----Botão de ver detalhes----*/
 .text-box .button {
   --width: 100%;
   --height: 35px;
@@ -248,37 +256,6 @@ main {
   text-align: center;
   font-family: "Arial";
   transition: background 0.3s;
-}
-
-.comprar .button {
-  --width: 100%;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #222;
-  --tooltip-color: #fff;
-  height: var(--height);
-  background: var(--button-color);
-  position: relative;
-  text-align: center;
-  font-family: "Arial";
-  transition: background 0.3s;
-}
-
-
-.comprar .button::before {
-  position: absolute;
-  content: attr(data-tooltip);
-  width: var(--tooltip-width);
-  height: var(--tooltip-height);
-  background-color: #555;
-  font-size: 0.9rem;
-  color: #fff;
-  border-radius: .25em;
-  line-height: var(--tooltip-height);
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
-  left: calc(50% - var(--tooltip-width) / 2);
 }
 
 .text-box .button::before {
@@ -306,54 +283,11 @@ main {
   bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
 }
 
-.comprar .button::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 10px solid transparent;
-  border-top-color: #555;
-  left: calc(50% - 10px);
-  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
-}
-
-
-.comprar .button::after,
-.button::before {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-
 .text-box .button::after,
 .button::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
-}
-
-.text-box .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.comprar .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.comprar .button-wrapper,
-.text,
-.icon {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  color: #fff;
 }
 
 .text-box .button-wrapper,
@@ -367,20 +301,7 @@ main {
   color: #fff;
 }
 
-.text-box .text {
-  top: 0;
-}
-
-.comprar .text {
-  top: 0;
-}
-
 .text-box .text,
-.icon {
-  transition: top 0.5s;
-}
-
-.comprar .text,
 .icon {
   transition: top 0.5s;
 }
@@ -393,52 +314,12 @@ main {
   justify-content: center;
 }
 
-.comprar .icon {
-  color: #fff;
-  top: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .icon svg {
   width: 24px;
   height: 24px;
 }
 
-
-.comprar .button:hover {
-  background: #222;
-}
-
-
-.comprar .button:hover .text {
-  top: -100%;
-}
-
-
-.comprar .button:hover .icon {
-  top: 0;
-}
-
-
-.comprar .button:hover:before,
-.button:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-
-.comprar .button:hover:after {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
-}
-
-
-.comprar .button:hover:before {
-  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
-}
-
--- .text-box .button:hover {
+.text-box .button:hover {
   background: #222;
 }
 
@@ -464,6 +345,19 @@ main {
   bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
 }
 
+/*----Textos de descrição do produto----*/
+.text-box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box .text {
+  top: 0;
+}
+
+
+/*----Span de promoção da white-box----*/
 .white-box .sell {
   background-color: #E2401F;
   color: white;
@@ -474,6 +368,7 @@ main {
 }
 
 
+/*----Filtro de produtos----*/
 .filtros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -532,7 +427,6 @@ main {
 
 }
 
-
 .tip:hover {
   padding: 35px;
   background-color: white;
@@ -553,8 +447,9 @@ main {
   transform: scale(0.9, 0.9);
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*-----------------------Página de um produto específico------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------Página de um produto específico------------------------------------------------------------------------*/
+/*----Estilo geral dos elementos detalhados----*/
 .container-detalhes {
   margin: 0 auto;
   margin-top: 60px;
@@ -609,6 +504,7 @@ main {
   border-radius: 10px;
 }
 
+/*----Estilo preço do produto com desconto----*/
 .desconto h1::after {
   content: '';
   display: block;
@@ -618,62 +514,6 @@ main {
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
-}
-
-.input-box select {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-.input-box select {
-  margin: 0.6rem 0;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px #0000001c
-}
-
-.input-box select:hover {
-  background-color: #eeeeee75;
-
-}
-
-.input-box select:focus-visible {
-  outline: 1px solid #222;
-}
-
-.tamanho-group {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.5rem;
-  margin-top: 0.62rem;
-}
-
-.tamanho-input {
-  display: flex;
-  align-items: center;
-}
-
-.tamanho-input input {
-  margin-right: 0.35rem;
-}
-
-.tamanho-input label {
-  font-size: 0.81rem;
-  font-weight: 600;
-  color: #000000c0;
-}
-
-.comprar {
-  width: 100%;
-  height: 30px;
-}
-
-.comprar .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .produto {
@@ -734,9 +574,175 @@ main {
 .imagem-detalhada:hover>img:not(:hover) {
   transform: scale(0.9, 0.9);
 }
+/*----Estilo de seleção do formulário de um produto - detalhes----*/
+.input-box select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}  
 
-/*------------------------------------------------------------------------------------------------*/
-/*-------------------------------------Página de Endereço-----------------------------------------*/
+.input-box select {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c
+}    
+
+.input-box select:hover {
+  background-color: #eeeeee75;
+  
+}    
+
+.input-box select:focus-visible {
+  outline: 1px solid #222;
+}    
+
+/*----Estilo radio do tamanho----*/
+.tamanho-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin-top: 0.62rem;
+}  
+
+.tamanho-input {
+  display: flex;
+  align-items: center;
+}  
+
+.tamanho-input input {
+  margin-right: 0.35rem;
+}  
+
+.tamanho-input label {
+  font-size: 0.81rem;
+  font-weight: 600;
+  color: #000000c0;
+}  
+
+
+/*----Estilo do botão de compra----*/
+.comprar .button {
+  --width: 100%;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.comprar .button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.comprar {
+  width: 100%;
+  height: 30px;
+}
+
+.comprar .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comprar .text {
+  top: 0;
+}
+
+.comprar .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comprar .button-wrapper,
+.text,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.comprar .button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.comprar .button::after,
+.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.comprar .text,
+.icon {
+  transition: top 0.5s;
+}
+
+.comprar .icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comprar .button:hover .text {
+  top: -100%;
+}
+
+.comprar .button:hover {
+  background: #222;
+}
+
+.comprar .button:hover .icon {
+  top: 0;
+}
+
+.comprar .button:hover:before,
+.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.comprar .button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.comprar .button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Página de Endereço--------------------------------------------------------------------------------*/
 .container-endereco {
   max-width: 100%;
   height: 80vh;
@@ -747,50 +753,7 @@ main {
   width: 31rem;
 }
 
-.form {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 3rem;
-}
-
-.form-header {
-  margin-bottom: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.title-endereco h1 {
-  color: #222;
-}
-
-.login-button {
-  display: flex;
-  align-items: center;
-}
-
-.login-button button {
-  border: none;
-  background-color: #fde3a7d7;
-  padding: 0.4rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-button:hover {
-  background-color: #fde3a7d7;
-  transform: scale(1.1, 1.1);
-}
-
-.login-button button a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #fff;
-}
-
+/*----Formulário de endereço----*/
 .form-header h1::after {
   content: '';
   display: block;
@@ -806,7 +769,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .input-box {
@@ -866,7 +828,27 @@ main {
   color: #000000c0;
 }
 
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 3rem;
+}  
 
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}  
+
+.title-endereco h1 {
+  color: #222;
+}  
+
+/*----Botão de envio do formulário----*/
 .continue-button button {
   width: 100%;
   margin-top: 1.9rem;
@@ -892,8 +874,8 @@ main {
   transform: scale(1.1, 1.1);
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------Página Sobre Nós------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Página Sobre Nós------------------------------------------------------------------------------*/
 .sobre-nos {
   margin-top: 150px;
   max-width: 100%;
@@ -909,6 +891,7 @@ main {
   height: 40%;
 }
 
+/*----Textos do "sobre nós"----*/
 .sobre-nos-texto {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -927,8 +910,10 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 
+/*----Imagens do "sobre nós"-----*/
 .sobre-nos-texto .img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -946,8 +931,8 @@ main {
   height: 50%;
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*----------------------------------------Contatos------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Contatos---------------------------------------------------------------------------------------*/
 .contato {
   width: 100%;
   height: 30vh;
@@ -974,25 +959,22 @@ main {
   transition-duration: 0.3s;
 }
 
-/* instagram*/
+/*----Estilo dos ícones----*/
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: 0.3s;
 }
 
-/*Github*/
 .containerTwo:hover {
   background-color: #000000;
   transition-duration: 0.3s;
 }
 
-/* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: 0.3s;
 }
 
-/* Whatsapp*/
 .containerFour:hover {
   background-color: green;
   transition-duration: 0.3s;
@@ -1015,8 +997,8 @@ main {
   animation: slide-in-top 0.3s both;
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*-------------------------------------Footer-----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Footer--------------------------------------------------------------------------------------------*/
 footer {
   display: flex;
   width: 100%;
@@ -1033,8 +1015,8 @@ footer h5 {
 
 }
 
-/*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------Responsividade----------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------Responsividade-------------------------------------------------------------------------------*/
 @media screen and (max-width: 1330px) {
   .container-detalhes {
     width: 50%;
@@ -1215,4 +1197,4 @@ footer h5 {
   }
 }
 
-/*------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
